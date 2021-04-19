@@ -1,0 +1,61 @@
+<html>
+<head>
+{{>header}}
+
+	<div class="topnav" id="myTopnav">
+                    <a href="/" style="float:left"><i class="fa fa-connectdevelop"></i>&nbsp;&nbsp;WatsonTrend</a> 
+                    <a style="align:right" href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+                    <a href="/login" style="align: right" class="active"><i class="fa fa-user-circle-o"></i>&nbsp;&nbsp;Admin Login</a>
+                    <a href="/globaltrends"><i class="fa fa-globe"></i>&nbsp;&nbsp;Global Trends</a>
+                    <a href="/usertrends"><i class="fa fa-pie-chart"></i>&nbsp;&nbsp;User Trends</a>
+                    <a href="/"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a> </a>     
+	</div>
+
+</head>
+
+<body>
+<br />
+<div class="breadcrumb flat">
+	<a href="/">Home</a>
+	<a href="/login">Login</a>
+    <a href="/adminlogin" class="active">{{title}}</a>
+</div>
+
+
+
+<div class="wrapper">
+    
+		<br>
+		<div class="contactDiv">
+			<br>
+			<h2 class="innerDiv" align="center">{{title}}
+				<br>
+			</h2>
+			<br>
+		</div><br>
+
+		<div class="contactDiv">
+			<br>
+            <div class="innerDiv">
+                    <h1 align="center"> Placeholder </h1>
+			<br>
+            </div>
+
+		</div><br><br><br><br><br>
+		<div id="app"></div>
+	<div id="cookieconsent"></div>
+    <footer>
+        {{>footer}}
+		<div class="footer">
+            <a href="/About"><i class="fa fa-question-circle-o"></i>&nbsp;&nbsp;About Us</a>
+            <a href="/Contact"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Contact Us</a></p>
+        </div>
+    </footer>
+
+</div>
+	
+
+
+</body>
+</html>

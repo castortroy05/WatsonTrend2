@@ -1,0 +1,650 @@
+/*global variables*/
+:root{
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/* Search function styling */
+form.searchBar input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: white;
+  color: black;
+  margin:auto;
+}
+
+form.searchBar button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: darkgreen;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.searchBar button:hover {
+  background:lightgreen;
+}
+
+form.searchBar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form input[type=button]:hover, #viewMoreButton:hover {
+  background-color: #1DA1F2;
+  color: white;
+}
+
+
+form input[type=button] {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: right;
+  text-decoration: none;
+  height:42px;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: 1px solid;
+  border-radius: 5px;
+  width:90%;
+  text-align: left;
+}
+
+form input[type=text] {
+  -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  text-align: left;
+  width: 90%;
+}
+
+
+
+.breaklines
+{
+      word-wrap: break-word;
+}
+
+body {
+    width: 100%;
+    height:100%;
+    min-height:100%;
+    text-align: left;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#262d42;
+    /* background-image: url("https://images.unsplash.com/photo-1507048947301-7afc2aca0edc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2em;
+}
+h1 a {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.wrapper {
+    display: block;
+    width:100%;
+    overflow: auto;
+}
+
+
+main {
+    display: block;
+    width: 100vw;
+    min-height: 90vh;
+}
+
+.col {
+    display: block;
+    background: white;
+    width: 100%;
+    height: 190px;
+    margin: 0 0 20px;
+    padding: 1em;
+}
+
+footer {
+  overflow: hidden;
+  margin: auto;
+  bottom:0;
+  left:0;
+  right:0;
+  position: fixed;
+  background-color: #262d42;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 1px rgba(0, 0, 0, 0.19), 1px 1px 1px 5px #1DA1F2;
+  width:100%;
+  transition: all 0.5s ease;
+}
+
+footer a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  /* border-radius:12px; */
+  transition: all 0.5s ease;
+}
+
+
+
+footer a:hover {
+  background-color: #1DA1F2;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+footer a.active {
+  background-color: #1DA1F2;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+footer .icon {
+  display: none;
+  align-content:center;
+}
+
+
+
+
+
+
+ @media (min-width: 600px) {
+    main {
+        float: left;
+        display: inline-block;
+        width: 100%;
+    }
+
+ }
+
+
+ @media (min-width: 768px) {
+    main {
+        float: left;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+     
+
+ }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  justify-content: flex-end;
+}
+
+li {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px;
+  text-align: left;
+}
+
+a {
+	display: block;
+	color: white;
+	padding: 4px;
+	text-align: center;
+  }
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+
+th {
+	border: 1px solid #1DA1F2;
+	text-decoration: underline;
+	padding: 14px;
+}
+
+td {
+	border: 1px solid #1DA1F2;
+	font-size: 1.1em;
+	padding: 5px 0;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #659DBD;
+}
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: right;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: 1px solid;
+  border-radius: 15px;
+  box-shadow: 0 9px darkgreen;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px darkgreen;
+  transform: translateY(4px);
+}
+
+.button .active{
+  color:black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #262d42;
+  width:100%;
+  box-shadow:0 3px 1px 1px #1DA1F2, 0px 0px 0px 1px rgba(0, 183, 255, 0.19);
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  /* border-radius:12px; */
+  transition: all 0.5s ease;
+}
+
+.topnav a:hover {
+  background-color: #1DA1F2; /*#00ffdf99;*/
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #1DA1F2;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+/*set the outer div styling*/
+.contactDiv{
+  width:90%;
+  align-content: center;
+  background-color: #1DA1F2;
+  margin: auto;
+  height: auto;
+  color:white;
+  border-radius:var(--main-radius);
+  padding: var(--main-padding);
+  word-wrap: break-word;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*set the properties of the inner divs, used to display content*/
+.innerDiv{
+    width:90%;
+    align-content: center;
+    background-color: #1DA1F2;
+    margin: auto;
+    height: auto;
+    color:white;
+    border-radius:var(--main-radius);
+    padding: var(--main-padding);
+    word-wrap: break-word;
+}
+
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .contactDiv{
+    width:90%;
+    left:5%;
+    align-content: center;
+    background-color: #1DA1F2;
+    margin: auto;
+    height: auto;
+    color:white;
+    border-radius:var(--main-radius);
+    padding: var(--main-padding);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position:relative;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+
+  /*
+  .topnav.responsive a:hover{
+    color: white;
+    background: #1DA1F204;
+  }*/
+
+  .contactDiv{
+    width:91%;
+    left:5%;
+    align-content: center;
+    background-color: #1DA1F2;
+    margin: auto;
+    height: auto;
+    color:white;
+    border-radius:var(--main-radius);
+    padding: var(--main-padding);
+  }
+
+  .innerDiv{
+    width:90%;
+    align-content: center;
+    background-color: #1DA1F2;
+    margin: auto;
+    height: auto;
+    color:white;
+    border-radius:var(--main-radius);
+    padding: var(--main-padding);
+    word-wrap: break-word;
+}
+
+}
+
+/* map formatting */
+/* Set the size of the div element that contains the map */
+#map {
+  width:100%;
+  height: 50%;
+  overflow: hidden;
+  align-content:center;
+  margin:auto;
+  /* The height is 400 pixels */
+  /* The width is the width of the web page */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+/*format my contact us form*/
+input[type=text], select {
+  width: 90%;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=email], select {
+  width: 90%;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.searchButton{
+  width:49%; 
+  height:50px; 
+  color:white; 
+  background-color:#831dcc;
+  border-radius:var(--main-radius);
+  padding: var(--main-padding);
+}
+
+.searchInput{
+  width:49%; 
+  height:50px; 
+  color:black; 
+  background-color:white;
+  border-radius:var(--main-radius);
+  padding: var(--main-padding);
+}
+
+textarea {
+  width: 90%;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /*make sure it cannot resize beyond div width*/
+  max-width: 90%;
+  min-width: 90%;
+  height: 100px;
+  min-height: 120px;
+  max-height: 200px;
+}
+
+
+
+input[type=submit] {
+  width: 44.5%;
+  background-color: #262d42;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight:800;
+}
+
+input[type=submit]:hover {
+  background-color: #1DA1F2;
+  color: white;
+  font-weight:800;
+}
+
+input[type=reset] {
+  width: 44.5%;
+  background-color: #262d42;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight:800;
+}
+
+input[type=reset]:hover {
+  background-color: #1DA1F2;
+  color: white;
+  font-weight:800;
+}
+
+
+
+
+
+
+
+
+/*some breadcrumb CSS - https://codepen.io/arkev/pen/DzCKF*/
+.breadcrumb {
+	/*centering*/
+	display: inline-block;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+	border-radius: 5px;
+	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+	counter-reset: flag; 
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	color: white;
+	padding: 0 10px 0 60px;
+	background: #666;
+	background: linear-gradient(#666, #333);
+	position: relative;
+}
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.breadcrumb a:first-child {
+	padding-left: 46px;
+	border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+}
+.breadcrumb a:first-child:before {
+	left: 14px;
+}
+.breadcrumb a:last-child {
+	border-radius: 0 5px 5px 0;
+	padding-right: 20px;
+}
+
+/*hover/active styles*/
+.breadcrumb a.active, .breadcrumb a:hover{
+	background: #333;
+	background: linear-gradient(#333, #262d42);
+}
+.breadcrumb a.active:after, .breadcrumb a:hover:after {
+	background: #333;
+	background: linear-gradient(135deg, #333, #262d42);
+}
+
+/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+.breadcrumb a:after {
+	content: '';
+	position: absolute;
+	top: 0; 
+	right: -18px;
+	width: 36px; 
+	height: 36px;
+	transform: scale(0.707) rotate(45deg);
+	z-index: 1;
+	background: #666;
+	background: linear-gradient(135deg, #666, #333);
+	box-shadow: 
+		2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+		3px -3px 0 2px rgba(255, 255, 255, 0.1);
+	border-radius: 0 5px 0 50px;
+}
+
+.breadcrumb a:last-child:after {
+	content: none;
+}
+
+.breadcrumb a:before {
+	/* content: counter(flag); */
+	counter-increment: flag;
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 8px 0;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	background: #444;
+	background: linear-gradient(#444, #222);
+	font-weight: bold;
+}
+.flat a, .flat a:after {
+	background: #d8e0fb;
+	color: black;
+	transition: all 0.5s;
+}
+.flat a:before {
+	background: #1DA1F2;
+  color: white;
+	box-shadow: 0 0 0 1px #ccc;
+}
+.flat a:hover, .flat a.active, 
+.flat a:hover:after, .flat a.active:after{
+	background: #1DA1F2;
+  color: white;
+}
+
+
+
+
+
+
+
+

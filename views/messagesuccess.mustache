@@ -1,0 +1,57 @@
+
+<html>
+<head>
+{{>header}}
+
+	
+</head>
+
+<body style="background:{{background}}">
+<br />
+<div class="breadcrumb flat">
+	<a href="/">Home</a>
+    <a href="/contact">Contact Us</a>
+	<a href="/messagesuccess" class="active">{{title}}</a>
+</div>
+
+
+
+<div class="wrapper">
+
+
+		<br>
+		<div class="contactDiv">
+			<br>
+            <!-- error 404 in code: &#9315;&#9450;&#9315; -->
+			<h2 class="innerDiv" align="center">Message Sent
+				<br>
+			</h2>
+			<br>
+		</div><br>
+
+		<div class="contactDiv">
+
+            <div class="innerDiv" align="center">
+            <br /><br />
+                <h2>{{message}}</h2>
+                			<br />
+							<br />
+            </div>
+		</div><br><br>
+
+
+
+		<br><br><br>
+
+    <footer>
+        {{>footer}}
+		<div class="footer">
+            <a href="/About"><i class="fa fa-question-circle-o"></i>&nbsp;&nbsp;About Us</a>
+            <a href="/Contact"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Contact Us</a></p>
+        </div>
+    </footer>
+	
+
+
+</body>
+</html>

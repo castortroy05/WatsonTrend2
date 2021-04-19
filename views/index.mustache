@@ -1,0 +1,82 @@
+<html>
+<head>
+{{>header}}
+
+</head>
+
+<body class ="container-fluid" style="background-color:{{background}};">
+<br />
+<div class="breadcrumb flat">
+	<a href="/">Home</a>
+</div>
+
+
+<div class="wrapper">
+    
+    {{#twitterName}}
+                   <div class="contactDiv">
+			<br>
+			<h2 class="innerDiv" align="center">Hello {{twitterName}} and welcome to the WatsonTrend website!
+				<br>
+			</h2>
+			<br>
+		</div><br>
+
+		<div class="contactDiv">
+			<br>
+            
+            <div class="innerDiv">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><img src="{{twitterPic}}" alt="" class="img-responsive center-block" />{{twitterName}}</h3>
+                </div>
+                <div class="panel-body">
+                {{twitterUser}}
+                </div>
+            </div>
+           </div>
+           <p>{{tweets}}</p>
+    {{/twitterName}}
+    
+    
+    {{^twitterName}}
+    <div class="contactDiv">
+			<br>
+			<h2 class="innerDiv" align="center">Hello and welcome to the WatsonTrend website!
+				<br>
+			</h2>
+			<br>
+		</div><br>
+
+		<div class="contactDiv">
+			<br>
+            <div class="innerDiv">
+                    <h1 align="center"> Please login to continue </h1>
+                    
+			<br>
+            </div>
+        
+    
+    {{/twitterName}}
+		
+		</div><br><br><br><br><br>
+
+		<div id="app"></div>
+	<div id="cookieconsent" style="color:white"></div>
+
+    
+    <footer>
+        {{>footer}}
+		<div class="footer" style="float:left">
+            <a href="/About"><i class="fa fa-question-circle-o"></i>&nbsp;&nbsp;About Us</a>
+            <a href="/Contact"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Contact Us</a></p>
+        </div>
+    </footer>
+
+</div>
+	
+
+
+</body>
+</html>

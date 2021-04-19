@@ -1,0 +1,203 @@
+
+<html>
+<head>
+{{>header}}
+
+
+                
+	<!-- map script -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhcNsNAkCToiEoqD6OHKDGplxz-Yk3e-A&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+<script>
+	// Initialize and add the map
+	function initMap() {
+	  // The location of Glasgow
+	  const glasgow = { lat: 55.866757, lng: -4.249957 };
+	  // The map, centered at Glasgow
+	  const map = new google.maps.Map(document.getElementById("map"), {
+		zoom: 15,
+		center: glasgow,
+	  });
+	  // The marker, positioned at Glasgow
+	  const marker = new google.maps.Marker({
+		position: glasgow,
+		map: map,
+	  });
+	}
+  </script>
+</head>
+
+<body>
+<br />
+<div class="breadcrumb flat">
+	<a href="/">Home</a>
+	<a href="/about" class="active">{{title}}</a>
+</div>
+
+
+
+<div class="wrapper">
+		<br>
+        <div class="contactDiv" >
+            <div class="innerDiv" align="center">
+                        <br />
+                            <!-- insert bio's here -->
+                            <div align="centre">
+                                <h1>Who are we?</h1> <br />
+                                    <br />
+                                <h4><p>We are a group of students, currently enrolled in various BSc(Hons) computing courses at Glasgow Caledonian University. <br /> <br />
+                                        Our aim is to implement a system which integrates the Wotson API, as developed by IBM. <br />
+                                        <br />
+                                        The system is intended to provide feedback on tweets recieved by the user, where the Wotson API will determine 
+                                        the general sentiment, and indeed tone, allowing them to see if their incoming tweets are positive, or negative, etc.
+                                        <br /> <br />
+                                        In addition, we intend to provide a facility whereby users can determine the sentiment and tone of globally trending topics. </p>
+                                </h4>
+                                <br /> <br /> <br />
+                            </div>
+            </div>
+        </div>
+        <br />
+
+        <div class="contactDiv" >
+            <div class="innerDiv" align="center">
+            <br />
+                            <h1 align="centre">Our Team!</h1> <br /> <br />
+			                <table class="center" style="width: 90%;height:0px; color: white" border="0px;">
+                                <tbody>
+                                        <tr>
+                                        <td align="center" rowspan="2" style="width:20%">
+                                            <i class="fa fa-user-circle-o" style="font-size:92px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;";></i>
+                                        </td>
+                                            <td>
+                                                <p align="left">
+                                                Name: Benjamin Darlington <br />
+                                                Position: Project Manager
+                                                </p>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                           
+                            <table class="center" style="width: 90%;height:0px; color: white" border="0px;">
+                                <tbody>
+                                        <tr>
+                                        <td >
+                                                <p align="right">
+                                                Name: James Alexander Doak <br />
+                                                Position: System Developer
+                                                </p>
+                                        </td >
+                                            <td align="right" rowspan="2" style="width:20%">
+                                                <i class="fa fa-user-circle-o" style="font-size:92px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;";></i>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+			                <table class="center" style="width: 90%;height:0px; color: white" border="0px;">
+                                <tbody>
+                                        <tr>
+                                        <td align="center" rowspan="2" style="width:20%">
+                                            <i class="fa fa-user-circle-o" style="font-size:92px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;";></i>
+                                        </td>
+                                            <td>
+                                                <p align="left">
+                                                Name: Anthony Lockhart <br />
+                                                Position: System Developer
+                                                </p>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                            
+                            <table class="center" style="width: 90%;height:0px; color: white" border="0px;">
+                                <tbody>
+                                        <tr>
+                                        <td >
+                                                <p align="right">
+                                                Name: Zoe Mills Wilson <br />
+                                                Position: Designer
+                                                </p>
+                                        </td >
+                                            <td align="right" rowspan="2" style="width:20%">
+                                                <i class="fa fa-user-circle-o" style="font-size:92px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;";></i>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+			                <table class="center" style="width: 90%;height:0px; color: white" border="0px;">
+                                <tbody>
+                                        <tr>
+                                        <td align="center" rowspan="2" style="width:20%">
+                                            <i class="fa fa-user-circle-o" style="font-size:92px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;";></i>
+                                        </td>
+                                            <td>
+                                                <p align="left">
+                                                Name: Joe Williamson <br />
+                                                Position: Designer
+                                                </p>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                            
+                            <table class="center" style="width: 90%;height:0px; color: white" border="0px;">
+                                <tbody>
+                                        <tr>
+                                        <td >
+                                                <p align="right">
+                                                Name: Aliyan Khan <br />
+                                                Position: Designer
+                                                </p>
+                                        </td >
+                                            <td align="right" rowspan="2" style="width:20%">
+                                                <i class="fa fa-user-circle-o" style="font-size:92px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 50px;";></i>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                </div>
+            </div>
+            <br />
+
+		<div class="contactDiv" >
+            <div class="innerDiv" align="center">
+                        <br />
+                        <div align="centre">
+                                <h1><p>Where can you find us?</h1> <br />
+                                    <div class="map" id="map" align="right">
+                                        <!-- will populate with map object-->
+                                    </div>
+                                    <br />
+                                        <address style="text-align:right; font-size: 10px">
+                                        Bajjaz - Team 23, <br />
+                                        BSc(Hons) Computing - Year 3, <br />
+                                        Glasgow Caledonian University, <br />
+                                        Cowcaddens Rd, <br />
+                                        Glasgow, <br />
+                                        G4 0BA
+                                        </address>
+                                    <br />
+                        </div>
+            </div>
+        </div>
+        <br /><br />
+        <br /><br />
+        <br /><br />
+        		<div id="app"></div>
+	<div id="cookieconsent"></div>
+    <footer>
+        {{>footer}}
+		<div class="footer">
+            <a href="/About" class="active"><i class="fa fa-question-circle-o"></i>&nbsp;&nbsp;About Us</a>
+            <a href="/Contact"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Contact Us</a></p>
+        </div>
+    </footer>
+</div>
+	
+
+</body>
+</html>
